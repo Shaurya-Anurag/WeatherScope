@@ -1,0 +1,4142 @@
+{
+  "meta": {
+    "status": "ready",
+    "source": "GlobalWeatherRepository-selected-columns.csv",
+    "generated_at": "2026-10-29T18:32:44.679216+00:00",
+    "rows": 170927,
+    "cities": 268,
+    "countries": 211,
+    "date_min": "2024-05-16",
+    "date_max": "2026-10-13",
+    "timestamp_note": "lastupdated is treated as observation time; it is not assumed to represent a continuous historical series.",
+    "warnings": [
+      "Values outside broad physical sanity ranges were set to missing for derived summaries; raw source file remains unchanged."
+    ]
+  },
+  "kpis": {
+    "mean_temp_c": 21.444858593777422,
+    "mean_humidity_pct": null,
+    "mean_wind_kph": null,
+    "precipitation_rows": 0,
+    "anomaly_count": 3124
+  },
+  "map_points": [
+    {
+      "city": "'S Gravenjansdijk",
+      "country": "Belgium",
+      "lat": 51.25,
+      "lon": 3.6333,
+      "temp_c": 14.261020881670534,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "'S Gravenjansdyk",
+      "country": "Belgium",
+      "lat": 51.25,
+      "lon": 3.63,
+      "temp_c": 16.341666666666665,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "'S Gravenstaffel",
+      "country": "Belgium",
+      "lat": 50.88,
+      "lon": 2.98,
+      "temp_c": 15.5625,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "'S-Gravenbrakel",
+      "country": "Belgium",
+      "lat": 50.6,
+      "lon": 4.1333,
+      "temp_c": 11.370987654320986,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "-Kingdom",
+      "country": "\u706b\u9e21",
+      "lat": 38.85,
+      "lon": 34.65,
+      "temp_c": 29.7,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Aakip",
+      "country": "Palau",
+      "lat": 7.3619,
+      "lon": 134.5122,
+      "temp_c": 28.705000000000002,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Aba",
+      "country": "Cameroon",
+      "lat": 5.6,
+      "lon": 14.05,
+      "temp_c": 19.213636363636365,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Abaer",
+      "country": "Iceland",
+      "lat": 65.3,
+      "lon": -18.8667,
+      "temp_c": 6.8999999999999995,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Abazu",
+      "country": "Myanmar",
+      "lat": 17.6167,
+      "lon": 96.7333,
+      "temp_c": 28.250980392156862,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "lat": 24.4667,
+      "lon": 54.3667,
+      "temp_c": 32.532004555808655,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Abuja",
+      "country": "Nigeria",
+      "lat": 9.1758,
+      "lon": 7.1808,
+      "temp_c": 26.33348519362187,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Accra",
+      "country": "Ghana",
+      "lat": 5.55,
+      "lon": -0.2167,
+      "temp_c": 26.78555176336746,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Achelap",
+      "country": "Palau",
+      "lat": 7.6333,
+      "lon": 134.6375,
+      "temp_c": 28.454901960784316,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Addis Ababa",
+      "country": "Ethiopia",
+      "lat": 9.0333,
+      "lon": 38.7,
+      "temp_c": 19.0472,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Addis Abeba",
+      "country": "Ethiopia",
+      "lat": 9.031649999999999,
+      "lon": 38.7,
+      "temp_c": 19.0,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Adkip",
+      "country": "Palau",
+      "lat": 7.36,
+      "lon": 134.51,
+      "temp_c": 26.505000000000003,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Aguaray",
+      "country": "Paraguay",
+      "lat": -19.85,
+      "lon": -58.5167,
+      "temp_c": 23.299999999999997,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Airai",
+      "country": "Palau",
+      "lat": 7.3575,
+      "lon": 134.5578,
+      "temp_c": 28.063072776280322,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Algiers",
+      "country": "Algeria",
+      "lat": 36.7631,
+      "lon": 3.0506,
+      "temp_c": 20.78390410958904,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Amman",
+      "country": "Jordan",
+      "lat": 31.95,
+      "lon": 35.9333,
+      "temp_c": 21.474458380843785,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "lat": 52.374,
+      "lon": 4.8897,
+      "temp_c": 12.792824601366743,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Andorra La Vella",
+      "country": "Andorra",
+      "lat": 42.5,
+      "lon": 1.5167,
+      "temp_c": 9.017995444191344,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Ankara",
+      "country": "Turkey",
+      "lat": 39.9272,
+      "lon": 32.8644,
+      "temp_c": 15.977397260273973,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Antananarivo",
+      "country": "Madagascar",
+      "lat": -18.9167,
+      "lon": 47.5167,
+      "temp_c": 22.599658314350798,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Apia",
+      "country": "Samoa",
+      "lat": -13.8333,
+      "lon": -171.7333,
+      "temp_c": 26.04954128440367,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ar Riyadh",
+      "country": "Saudi Arabien",
+      "lat": 24.64,
+      "lon": 46.77,
+      "temp_c": 45.0,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Ashgabat",
+      "country": "Turkmenistan",
+      "lat": 37.95,
+      "lon": 58.3833,
+      "temp_c": 23.653933865450398,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Asmara",
+      "country": "Eritrea",
+      "lat": 15.3333,
+      "lon": 38.9333,
+      "temp_c": 21.254266211604097,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Astana",
+      "country": "Kazakhstan",
+      "lat": 51.1811,
+      "lon": 71.4278,
+      "temp_c": 10.652625570776257,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Asuncion",
+      "country": "Paraguay",
+      "lat": -25.268349999999998,
+      "lon": -57.668350000000004,
+      "temp_c": 15.0,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Athens",
+      "country": "Greece",
+      "lat": 37.9795,
+      "lon": 23.7162,
+      "temp_c": 22.085926773455377,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Aurora",
+      "country": "Paraguay",
+      "lat": -23.4333,
+      "lon": -61.3333,
+      "temp_c": 19.720330969267142,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bafoussam",
+      "country": "Cameroon",
+      "lat": 5.47,
+      "lon": 10.42,
+      "temp_c": 22.677777777777777,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "lat": 33.3386,
+      "lon": 44.3939,
+      "temp_c": 29.723208191126282,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Baku",
+      "country": "Azerbaijan",
+      "lat": 40.3953,
+      "lon": 49.8822,
+      "temp_c": 19.723489167616876,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bali",
+      "country": "Indonesia",
+      "lat": -0.13975,
+      "lon": 98.188,
+      "temp_c": 28.9,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bamako",
+      "country": "Mali",
+      "lat": 12.65,
+      "lon": -8.0,
+      "temp_c": 26.233751425313567,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ban Lom",
+      "country": "Vietnam",
+      "lat": 21.1333,
+      "lon": 104.7,
+      "temp_c": 26.342822384428224,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bandar Seri Begawan",
+      "country": "Brunei Darussalam",
+      "lat": 4.8833,
+      "lon": 114.9333,
+      "temp_c": 29.71175799086758,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "lat": 13.75,
+      "lon": 100.5167,
+      "temp_c": 31.946408209806158,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bangui",
+      "country": "Central African Republic",
+      "lat": 4.3667,
+      "lon": 18.5833,
+      "temp_c": 26.976624857468643,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Banjul",
+      "country": "Gambia",
+      "lat": 13.4531,
+      "lon": -16.5775,
+      "temp_c": 24.960526315789473,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Basseterre",
+      "country": "Saint Kitts and Nevis",
+      "lat": 17.3,
+      "lon": -62.7167,
+      "temp_c": 26.731164383561644,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Beijing Shi",
+      "country": "China",
+      "lat": 39.93,
+      "lon": 116.39,
+      "temp_c": 24.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Beijing",
+      "country": "China",
+      "lat": 39.9289,
+      "lon": 116.3883,
+      "temp_c": 19.837485714285712,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Beirut",
+      "country": "Lebanon",
+      "lat": 33.8719,
+      "lon": 35.5097,
+      "temp_c": 23.35883694412771,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Beirut",
+      "country": "\u041f\u043e\u043b\u044c\u0448\u0430",
+      "lat": 51.12,
+      "lon": 17.53,
+      "temp_c": 24.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Belgrade",
+      "country": "Serbia",
+      "lat": 44.804,
+      "lon": 20.4651,
+      "temp_c": 15.854328018223235,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Belmopan",
+      "country": "Belize",
+      "lat": 17.25,
+      "lon": -88.7667,
+      "temp_c": 22.27319587628866,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.5167,
+      "lon": 13.4,
+      "temp_c": 12.389521640091116,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Bern",
+      "country": "B\u00e9lgica",
+      "lat": 51.1,
+      "lon": 4.75,
+      "temp_c": 17.4,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bern",
+      "country": "Switzerland",
+      "lat": 46.9167,
+      "lon": 7.4667,
+      "temp_c": 11.461389521640092,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Bishkek",
+      "country": "Kyrghyzstan",
+      "lat": 42.8731,
+      "lon": 74.6003,
+      "temp_c": 18.236031927023944,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Bissau",
+      "country": "Guinea-Bissau",
+      "lat": 11.85,
+      "lon": -15.5833,
+      "temp_c": 25.369783352337514,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bogot",
+      "country": "Bulgaria",
+      "lat": 43.3167,
+      "lon": 24.7,
+      "temp_c": 17.589222373806276,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Bogot",
+      "country": "Hungary",
+      "lat": 47.25,
+      "lon": 16.8333,
+      "temp_c": 11.683098591549296,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Bogota",
+      "country": "Colombia",
+      "lat": 4.6,
+      "lon": -74.08165,
+      "temp_c": 13.9,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bournemouth Gardens",
+      "country": "Jamaica",
+      "lat": 17.9667,
+      "lon": -76.7667,
+      "temp_c": 25.554545454545455,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bras",
+      "country": "Brazil",
+      "lat": -2.0833,
+      "lon": -58.1667,
+      "temp_c": 24.248394495412843,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bratislava",
+      "country": "Slovakia",
+      "lat": 48.15,
+      "lon": 17.1167,
+      "temp_c": 13.876993166287017,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Brazzaville",
+      "country": "Congo",
+      "lat": -4.2592,
+      "lon": 15.2847,
+      "temp_c": 26.016114285714284,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bridgetown",
+      "country": "Barbados",
+      "lat": 13.1,
+      "lon": -59.6167,
+      "temp_c": 27.043835616438358,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Brussels",
+      "country": "Belgium",
+      "lat": 50.8333,
+      "lon": 4.3333,
+      "temp_c": 12.565981735159816,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Bucharest",
+      "country": "Romania",
+      "lat": 44.4333,
+      "lon": 26.1,
+      "temp_c": 16.16130136986301,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Budapest",
+      "country": "Hungary",
+      "lat": 47.5,
+      "lon": 19.0833,
+      "temp_c": 14.75751708428246,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "lat": -34.5875,
+      "lon": -58.6725,
+      "temp_c": 14.154908675799087,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Bujumbura",
+      "country": "Burundi",
+      "lat": -3.3761,
+      "lon": 29.36,
+      "temp_c": 25.18566552901024,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Cairo",
+      "country": "Egypt",
+      "lat": 30.05,
+      "lon": 31.25,
+      "temp_c": 25.34246575342466,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Canberra",
+      "country": "Australia",
+      "lat": -35.2833,
+      "lon": 149.2167,
+      "temp_c": 15.167616875712657,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Caracas",
+      "country": "Venezuela",
+      "lat": 10.5,
+      "lon": -66.9167,
+      "temp_c": 21.965068493150685,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Carreria",
+      "country": "Paraguay",
+      "lat": -21.55,
+      "lon": -58.1167,
+      "temp_c": 26.564,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Castries",
+      "country": "Saint Lucia",
+      "lat": 14.0,
+      "lon": -61.0,
+      "temp_c": 27.030672748004562,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Chi Chi Khvar",
+      "country": "Iran",
+      "lat": 36.2625,
+      "lon": 46.59,
+      "temp_c": 18.00599520383693,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Chi-Chi-Erh",
+      "country": "Russia",
+      "lat": 51.7,
+      "lon": 94.45,
+      "temp_c": -12.490243902439024,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "City Of San Marino",
+      "country": "San Marino",
+      "lat": 43.93,
+      "lon": 12.45,
+      "temp_c": 31.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Colombo",
+      "country": "Sri Lanka",
+      "lat": 6.9319,
+      "lon": 79.8478,
+      "temp_c": 30.020159453302963,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Conakry",
+      "country": "Guinea",
+      "lat": 9.5092,
+      "lon": -13.7122,
+      "temp_c": 25.938312428734324,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "lat": 55.6667,
+      "lon": 12.5833,
+      "temp_c": 11.343036529680365,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Costa Rica",
+      "country": "\u0643\u0648\u0644\u0648\u0645\u0628\u064a\u0627",
+      "lat": 6.43,
+      "lon": -70.92,
+      "temp_c": 23.1,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Dakar",
+      "country": "Senegal",
+      "lat": 14.6708,
+      "lon": -17.4381,
+      "temp_c": 24.56279863481229,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Damascus",
+      "country": "Syria",
+      "lat": 33.5,
+      "lon": 36.3,
+      "temp_c": 21.605815279361458,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Dhaka",
+      "country": "Bangladesh",
+      "lat": 23.7231,
+      "lon": 90.4086,
+      "temp_c": 31.299657924743443,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Dhidhdhoo",
+      "country": "Maldives",
+      "lat": 6.8833,
+      "lon": 73.1,
+      "temp_c": 27.929201430274134,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Dili",
+      "country": "Timor-Leste",
+      "lat": -8.5586,
+      "lon": 125.5736,
+      "temp_c": 26.346567505720824,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Djibouti",
+      "country": "Djibouti",
+      "lat": 11.595,
+      "lon": 43.1481,
+      "temp_c": 31.493714285714287,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Dodoma",
+      "country": "Tanzania",
+      "lat": -6.1833,
+      "lon": 35.75,
+      "temp_c": 24.142759407069555,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Doha",
+      "country": "Qatar",
+      "lat": 25.2867,
+      "lon": 51.5333,
+      "temp_c": 32.97420091324201,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Douala",
+      "country": "Cameroon",
+      "lat": 4.0503,
+      "lon": 9.7,
+      "temp_c": 25.470833333333335,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Dublin",
+      "country": "Ireland",
+      "lat": 53.3331,
+      "lon": -6.2489,
+      "temp_c": 11.0488,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Dushanbe",
+      "country": "Tajikistan",
+      "lat": 38.56,
+      "lon": 68.7739,
+      "temp_c": 23.617808219178084,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Felidhoo",
+      "country": "Maldives",
+      "lat": 3.48,
+      "lon": 73.53,
+      "temp_c": 28.79705882352941,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Freetown",
+      "country": "Sierra Leone",
+      "lat": 8.49,
+      "lon": -13.2342,
+      "temp_c": 25.744,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Funafuti",
+      "country": "Tuvalu",
+      "lat": -8.5167,
+      "lon": 179.2167,
+      "temp_c": 28.711972633979478,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Gaborone",
+      "country": "Botswana",
+      "lat": -24.6464,
+      "lon": 25.9119,
+      "temp_c": 20.940820980615733,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Garrapata",
+      "country": "Paraguay",
+      "lat": -19.7,
+      "lon": -58.7167,
+      "temp_c": 21.352941176470587,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Georgetown",
+      "country": "Guyana",
+      "lat": 6.8,
+      "lon": -58.1667,
+      "temp_c": 24.651258581235698,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Grenada",
+      "country": "USA United States of America",
+      "lat": 33.78,
+      "lon": -89.81,
+      "temp_c": 28.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Grenada",
+      "country": "United States of America",
+      "lat": 33.7832,
+      "lon": -89.807,
+      "temp_c": 22.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Grindavik",
+      "country": "Iceland",
+      "lat": 63.83,
+      "lon": -22.43,
+      "temp_c": 8.894444444444444,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Guatemala City",
+      "country": "Guatemala",
+      "lat": 14.6211,
+      "lon": -90.5269,
+      "temp_c": 17.274856486796786,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "lat": 21.0333,
+      "lon": 105.85,
+      "temp_c": 28.116305587229192,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Harare",
+      "country": "Zimbabwe",
+      "lat": -17.8178,
+      "lon": 31.0447,
+      "temp_c": 21.54063926940639,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Havana",
+      "country": "Cuba",
+      "lat": 23.1319,
+      "lon": -82.3642,
+      "temp_c": 23.299885583524027,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Helsinki",
+      "country": "Finland",
+      "lat": 60.1756,
+      "lon": 24.9342,
+      "temp_c": 9.483371298405467,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "lat": 10.75,
+      "lon": 106.66835,
+      "temp_c": 29.95,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Honiara",
+      "country": "Solomon Islands",
+      "lat": -9.4333,
+      "lon": 159.95,
+      "temp_c": 27.335876993166288,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Islamabad",
+      "country": "Pakistan",
+      "lat": 33.7,
+      "lon": 73.1667,
+      "temp_c": 28.805365296803654,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Ivory Ivory Ban",
+      "country": "Mal\u00e1sia",
+      "lat": 4.63,
+      "lon": 118.37,
+      "temp_c": 24.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ivory",
+      "country": "Madagascar",
+      "lat": -24.3667,
+      "lon": 46.45,
+      "temp_c": 28.604803493449783,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Jakarta",
+      "country": "Indonesia",
+      "lat": -6.2146,
+      "lon": 106.8451,
+      "temp_c": 30.622779043280183,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Jerusalem",
+      "country": "Israel",
+      "lat": 31.78,
+      "lon": 35.23,
+      "temp_c": 22.92919042189282,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Juba",
+      "country": "Sudan",
+      "lat": 12.15,
+      "lon": 24.45,
+      "temp_c": 28.077028571428574,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kabul",
+      "country": "Afghanistan",
+      "lat": 34.5167,
+      "lon": 69.1833,
+      "temp_c": 19.997380410022778,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Kampala",
+      "country": "Uganda",
+      "lat": 0.3156,
+      "lon": 32.5656,
+      "temp_c": 24.68359908883827,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kathmandu",
+      "country": "Nepal",
+      "lat": 27.7167,
+      "lon": 85.3167,
+      "temp_c": 23.33922462941847,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Khartoum",
+      "country": "Sudan",
+      "lat": 15.5881,
+      "lon": 32.5342,
+      "temp_c": 31.505479452054793,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kigali",
+      "country": "Rwanda",
+      "lat": -1.9536,
+      "lon": 30.0606,
+      "temp_c": 22.985649202733487,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kingston",
+      "country": "Jamaica",
+      "lat": 18.0,
+      "lon": -76.8,
+      "temp_c": 26.0993993993994,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kingstown",
+      "country": "Saint Vincent and the Grenadines",
+      "lat": 13.1333,
+      "lon": -61.2167,
+      "temp_c": 27.294514285714286,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kingstown",
+      "country": "Saint-Vincent-et-les-Grenadines",
+      "lat": 13.13,
+      "lon": -61.22,
+      "temp_c": 27.8,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kinshasa",
+      "country": "Democratic Republic of Congo",
+      "lat": -4.3,
+      "lon": 15.3,
+      "temp_c": 25.876342857142856,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kiyabo",
+      "country": "Philippines",
+      "lat": 14.6,
+      "lon": 120.98,
+      "temp_c": 30.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Koror",
+      "country": "Palau",
+      "lat": 7.3333,
+      "lon": 134.4833,
+      "temp_c": 28.934615384615384,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Krasnyy Turkmenistan",
+      "country": "Turkm\u00e9nistan",
+      "lat": 37.7,
+      "lon": 65.37,
+      "temp_c": 37.8,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "lat": 3.1667,
+      "lon": 101.7,
+      "temp_c": 30.676282782212084,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "lat": 29.3667,
+      "lon": 47.96,
+      "temp_c": 31.625228310502283,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Kuwait",
+      "country": "Kuwait",
+      "lat": 29.37,
+      "lon": 47.98,
+      "temp_c": 44.4,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Kyiv",
+      "country": "Ukraine",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "temp_c": 12.810352673492604,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Laos",
+      "country": "Indonesia",
+      "lat": -8.1826,
+      "lon": 114.3188,
+      "temp_c": 26.791542857142854,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Libreville",
+      "country": "Gabon",
+      "lat": 0.3833,
+      "lon": 9.45,
+      "temp_c": 26.24732041049031,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Lilongwe",
+      "country": "Malawi",
+      "lat": -13.9833,
+      "lon": 33.7833,
+      "temp_c": 22.98507972665148,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Lima",
+      "country": "Peru",
+      "lat": -12.05,
+      "lon": -77.05,
+      "temp_c": 18.135967926689577,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "lat": 38.7167,
+      "lon": -9.1333,
+      "temp_c": 17.171835803876853,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ljubljana",
+      "country": "Slovenia",
+      "lat": 46.0553,
+      "lon": 14.5144,
+      "temp_c": 13.305011389521638,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Lom",
+      "country": "Bulgaria",
+      "lat": 43.8139,
+      "lon": 23.2361,
+      "temp_c": 13.106474820143884,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Lom",
+      "country": "Norway",
+      "lat": 61.8333,
+      "lon": 8.55,
+      "temp_c": 6.491428571428571,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Lom",
+      "country": "Russia",
+      "lat": 59.13,
+      "lon": 44.3,
+      "temp_c": 22.474999999999998,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Lome",
+      "country": "Togo",
+      "lat": 6.13095,
+      "lon": 1.2214,
+      "temp_c": 27.1,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": 51.5171,
+      "lon": -0.1062,
+      "temp_c": 12.667579908675798,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Luanda",
+      "country": "Angola",
+      "lat": -8.8383,
+      "lon": 13.2344,
+      "temp_c": 25.21833712984055,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Lusaka",
+      "country": "Zambia",
+      "lat": -15.4167,
+      "lon": 28.2833,
+      "temp_c": 22.894305239179957,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Luxembourg",
+      "country": "Luxembourg",
+      "lat": 49.6117,
+      "lon": 6.13,
+      "temp_c": 11.358742857142857,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Madrid",
+      "country": "Spain",
+      "lat": 40.4,
+      "lon": -3.6833,
+      "temp_c": 16.3250569476082,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Majuro",
+      "country": "Marshall Islands",
+      "lat": 7.1,
+      "lon": 171.3833,
+      "temp_c": 28.349430523917995,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Malabo",
+      "country": "Equatorial Guinea",
+      "lat": 3.75,
+      "lon": 8.7833,
+      "temp_c": 26.481001137656428,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Male",
+      "country": "Maldives",
+      "lat": 4.16835,
+      "lon": 73.5,
+      "temp_c": 28.55,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Managua",
+      "country": "Nicaragua",
+      "lat": 12.1508,
+      "lon": -86.2683,
+      "temp_c": 24.74151376146789,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Manama",
+      "country": "Bahrain",
+      "lat": 26.2361,
+      "lon": 50.5831,
+      "temp_c": 30.22756264236902,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Manila",
+      "country": "Philippines",
+      "lat": 14.6042,
+      "lon": 120.9822,
+      "temp_c": 30.42294520547945,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Maputo",
+      "country": "Mozambique",
+      "lat": -25.9653,
+      "lon": 32.5892,
+      "temp_c": 24.424259681093393,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Maseru",
+      "country": "Lesotho",
+      "lat": -29.3167,
+      "lon": 27.4833,
+      "temp_c": 17.4222602739726,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Mbabane",
+      "country": "Senegal",
+      "lat": 14.4833,
+      "lon": -15.2667,
+      "temp_c": 25.70381679389313,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Mbabane",
+      "country": "Swaziland",
+      "lat": -26.3167,
+      "lon": 31.1333,
+      "temp_c": 21.35436241610738,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Melbourne",
+      "country": "Australia",
+      "lat": -37.818349999999995,
+      "lon": 144.96835,
+      "temp_c": 11.899999999999999,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Mexico (Grupo Mexico)",
+      "country": "Mexique",
+      "lat": 27.42,
+      "lon": -109.93,
+      "temp_c": 27.4,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "lat": 19.4285,
+      "lon": -99.1277,
+      "temp_c": 14.842334096109841,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Meyungs",
+      "country": "Palau",
+      "lat": 7.35,
+      "lon": 134.45,
+      "temp_c": 27.0,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Minsk",
+      "country": "Belarus",
+      "lat": 53.9,
+      "lon": 27.5667,
+      "temp_c": 10.347776510832382,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Mogadishu",
+      "country": "Somalia",
+      "lat": 2.0667,
+      "lon": 45.3667,
+      "temp_c": 28.462785388127855,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Moldova",
+      "country": "Pol\u00f4nia",
+      "lat": 53.33,
+      "lon": 21.62,
+      "temp_c": 27.7,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Mombasa",
+      "country": "Kenya",
+      "lat": -4.05,
+      "lon": 39.668350000000004,
+      "temp_c": 26.5,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Monaco",
+      "country": "Monaco",
+      "lat": 43.7333,
+      "lon": 7.4167,
+      "temp_c": 18.683981693363844,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Monrovia",
+      "country": "Liberia",
+      "lat": 6.3106,
+      "lon": -10.8047,
+      "temp_c": 25.6636259977195,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Montevideo",
+      "country": "Uruguay",
+      "lat": -34.8581,
+      "lon": -56.1708,
+      "temp_c": 13.812200684150513,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Morocco City",
+      "country": "Marrocos",
+      "lat": 31.63,
+      "lon": -8.0,
+      "temp_c": 40.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Moroni",
+      "country": "Comoros",
+      "lat": -11.7042,
+      "lon": 43.2403,
+      "temp_c": 26.418285714285716,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Moroni",
+      "country": "Komoren",
+      "lat": -12.35,
+      "lon": 43.85,
+      "temp_c": 25.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Moroni",
+      "country": "USA United States of America",
+      "lat": 39.53,
+      "lon": -111.59,
+      "temp_c": 18.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Moroni",
+      "country": "United States of America",
+      "lat": 39.5268,
+      "lon": -111.585,
+      "temp_c": 18.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Moscow",
+      "country": "Russia",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "temp_c": 10.44396355353075,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Muscat",
+      "country": "Oman",
+      "lat": 23.6133,
+      "lon": 58.5933,
+      "temp_c": 31.804328018223234,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "N'djamena",
+      "country": "Chad",
+      "lat": 12.1131,
+      "lon": 15.0492,
+      "temp_c": 28.902389078498295,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Nairobi",
+      "country": "Kenya",
+      "lat": -1.2833,
+      "lon": 36.8167,
+      "temp_c": 20.63394077448747,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Namawbin",
+      "country": "Myanmar",
+      "lat": 24.2333,
+      "lon": 95.4833,
+      "temp_c": 28.72558139534884,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Nan",
+      "country": "Thailand",
+      "lat": 18.7833,
+      "lon": 100.7833,
+      "temp_c": 30.242189281641963,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Nassau",
+      "country": "Bahamas",
+      "lat": 25.0833,
+      "lon": -77.35,
+      "temp_c": 25.07064220183486,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "National",
+      "country": "Bolivia",
+      "lat": -11.1833,
+      "lon": -67.0833,
+      "temp_c": 22.670756880733947,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "New Delhi",
+      "country": "Inde",
+      "lat": 28.6,
+      "lon": 77.2,
+      "temp_c": 31.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "New Delhi",
+      "country": "India",
+      "lat": 28.6,
+      "lon": 77.2,
+      "temp_c": 30.679908675799084,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "New Guatemala",
+      "country": "\u0413\u0432\u0430\u0442\u0435\u043c\u0430\u043b\u0430",
+      "lat": 14.62,
+      "lon": -90.53,
+      "temp_c": 15.9,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "New York",
+      "country": "United States of America",
+      "lat": 40.7142,
+      "lon": -74.0064,
+      "temp_c": 21.633333333333336,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Newport East",
+      "country": "Jamaica",
+      "lat": 17.9667,
+      "lon": -76.8,
+      "temp_c": 25.183870967741935,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ngaoundere",
+      "country": "Cameroon",
+      "lat": 7.3167,
+      "lon": 13.5833,
+      "temp_c": 25.3938679245283,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Niamey",
+      "country": "Niger",
+      "lat": 13.52,
+      "lon": 2.1167,
+      "temp_c": 28.816970387243735,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Nicosia",
+      "country": "Cyprus",
+      "lat": 35.1667,
+      "lon": 33.3667,
+      "temp_c": 24.46093394077449,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ninga",
+      "country": "Cameroon",
+      "lat": 4.3167,
+      "lon": 10.5167,
+      "temp_c": 22.427906976744186,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Norman Gardens",
+      "country": "Jamaica",
+      "lat": 17.97,
+      "lon": -76.75,
+      "temp_c": 30.33055555555556,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Nouakchott",
+      "country": "Mauritania",
+      "lat": 18.0864,
+      "lon": -15.9753,
+      "temp_c": 23.62291904218928,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Nuku'alofa",
+      "country": "Tonga",
+      "lat": -21.13165,
+      "lon": -175.2,
+      "temp_c": 23.049999999999997,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Nuku`Aloia",
+      "country": "Tonga",
+      "lat": -21.1333,
+      "lon": -175.2,
+      "temp_c": 23.627574370709382,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Oslo",
+      "country": "Norway",
+      "lat": 59.9167,
+      "lon": 10.75,
+      "temp_c": 8.431506849315069,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Ottawa",
+      "country": "Canada",
+      "lat": 45.4167,
+      "lon": -75.7,
+      "temp_c": 6.623515981735159,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Ouagadougou",
+      "country": "Burkina Faso",
+      "lat": 12.3703,
+      "lon": -1.5247,
+      "temp_c": 27.563325740318906,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Palau",
+      "country": "USA United States of America",
+      "lat": 7.5,
+      "lon": 134.57,
+      "temp_c": 27.2,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Palau",
+      "country": "United States of America",
+      "lat": 7.4966,
+      "lon": 134.574,
+      "temp_c": 26.1,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Palikir",
+      "country": "Micronesia",
+      "lat": 6.9167,
+      "lon": 158.15,
+      "temp_c": 28.288114285714283,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Panama City",
+      "country": "Panama",
+      "lat": 8.9667,
+      "lon": -79.5333,
+      "temp_c": 25.50274285714286,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Paramaribo",
+      "country": "Suriname",
+      "lat": 5.8333,
+      "lon": -55.1667,
+      "temp_c": 24.285600000000002,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Paris",
+      "country": "France",
+      "lat": 48.8667,
+      "lon": 2.3333,
+      "temp_c": 13.826795895096922,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Pasto",
+      "country": "Paraguay",
+      "lat": -19.45,
+      "lon": -61.15,
+      "temp_c": 22.348000000000003,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Pathein",
+      "country": "Myanmar",
+      "lat": 16.78,
+      "lon": 94.73,
+      "temp_c": 28.80625,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Phnom Penh",
+      "country": "Cambodia",
+      "lat": 11.55,
+      "lon": 104.9167,
+      "temp_c": 32.0984,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Phnum Penh",
+      "country": "Cambodia",
+      "lat": 11.55,
+      "lon": 104.91835,
+      "temp_c": 29.85,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Podgorica",
+      "country": "Montenegro",
+      "lat": 42.4411,
+      "lon": 19.2636,
+      "temp_c": 18.94908675799087,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Port Louis",
+      "country": "Mauritius",
+      "lat": -20.1619,
+      "lon": 57.4989,
+      "temp_c": 26.209578107183578,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Port Moresby",
+      "country": "Papua New Guinea",
+      "lat": -9.4647,
+      "lon": 147.1925,
+      "temp_c": 26.83849658314351,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Port Of Spain",
+      "country": "Trinidad and Tobago",
+      "lat": 10.65,
+      "lon": -61.5167,
+      "temp_c": 25.14137142857143,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Port Royal",
+      "country": "Jamaica",
+      "lat": 17.9333,
+      "lon": -76.85,
+      "temp_c": 26.871666666666666,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Port Vila",
+      "country": "Vanuatu",
+      "lat": -17.7333,
+      "lon": 168.3167,
+      "temp_c": 24.945671981776766,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Port-Au-Prince",
+      "country": "Haiti",
+      "lat": 18.5392,
+      "lon": -72.335,
+      "temp_c": 21.370628571428572,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Porto-Novo",
+      "country": "Benin",
+      "lat": 6.4833,
+      "lon": 2.6167,
+      "temp_c": 27.679589509692132,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Prague",
+      "country": "Czech Republic",
+      "lat": 50.0833,
+      "lon": 14.4667,
+      "temp_c": 11.592808219178082,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Praia",
+      "country": "Cape Verde",
+      "lat": 14.9315,
+      "lon": -23.5125,
+      "temp_c": 23.98507972665148,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Pretoria",
+      "country": "South Africa",
+      "lat": -25.7469,
+      "lon": 28.188,
+      "temp_c": 19.21583143507973,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Pristina",
+      "country": "Kosovo",
+      "lat": 42.671350000000004,
+      "lon": 21.16845,
+      "temp_c": 21.75,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Pyongyang",
+      "country": "North Korea",
+      "lat": 39.0194,
+      "lon": 125.7547,
+      "temp_c": 16.113257142857144,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Quito",
+      "country": "Ecuador",
+      "lat": -0.2167,
+      "lon": -78.5,
+      "temp_c": 10.397823596792668,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Rabat",
+      "country": "Morocco",
+      "lat": 34.0253,
+      "lon": -6.8361,
+      "temp_c": 18.68607305936073,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Rangoon",
+      "country": "Myanmar",
+      "lat": 16.7833,
+      "lon": 96.1667,
+      "temp_c": 31.61661237785016,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Reykjavik",
+      "country": "Iceland",
+      "lat": 64.15,
+      "lon": -21.95,
+      "temp_c": 3.7389473684210524,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Riga",
+      "country": "Latvia",
+      "lat": 56.95,
+      "lon": 24.1,
+      "temp_c": 10.445547945205478,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Riga",
+      "country": "Letonia",
+      "lat": 56.95,
+      "lon": 24.1,
+      "temp_c": 20.6,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "lat": 24.6408,
+      "lon": 46.7728,
+      "temp_c": 31.11277080957811,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "lat": 41.9,
+      "lon": 12.4833,
+      "temp_c": 18.93291571753986,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Roseau",
+      "country": "Dominica",
+      "lat": 15.3,
+      "lon": -61.4,
+      "temp_c": 26.62646048109966,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "S-Chanf",
+      "country": "Switzerland",
+      "lat": 46.6167,
+      "lon": 9.9833,
+      "temp_c": 0.534,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "S. Manian",
+      "country": "Vietnam",
+      "lat": 11.2667,
+      "lon": 108.2333,
+      "temp_c": 28.935714285714283,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Saint George's",
+      "country": "Grenada",
+      "lat": 12.05,
+      "lon": -61.75,
+      "temp_c": 27.08084862385321,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Saint John's",
+      "country": "Antigua and Barbuda",
+      "lat": 17.1167,
+      "lon": -61.85,
+      "temp_c": 26.454004576659038,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Saint Petersburg",
+      "country": "Russia",
+      "lat": 59.89,
+      "lon": 30.26,
+      "temp_c": 22.9,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "San Andres",
+      "country": "Costa Rica",
+      "lat": 9.7333,
+      "lon": -84.0833,
+      "temp_c": 16.784732824427483,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "San Ignacio",
+      "country": "Costa Rica",
+      "lat": 9.8,
+      "lon": -84.1667,
+      "temp_c": 19.37266514806378,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "San Jose",
+      "country": "Costa Rica",
+      "lat": 9.9333,
+      "lon": -84.0833,
+      "temp_c": 18.95105633802817,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "San Juan",
+      "country": "Costa Rica",
+      "lat": 9.97,
+      "lon": -84.08,
+      "temp_c": 23.75,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "San Marino",
+      "country": "San Marino",
+      "lat": 43.9333,
+      "lon": 12.45,
+      "temp_c": 17.376659038901604,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "San Salvador",
+      "country": "El Salvador",
+      "lat": 13.7086,
+      "lon": -89.2031,
+      "temp_c": 23.418943742824343,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Sanaa",
+      "country": "Jemen",
+      "lat": 15.35,
+      "lon": 44.21,
+      "temp_c": 26.1,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Sanaa",
+      "country": "Yemen",
+      "lat": 15.3547,
+      "lon": 44.2067,
+      "temp_c": 22.125255972696245,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Santiago",
+      "country": "Chile",
+      "lat": -33.45,
+      "lon": -70.6667,
+      "temp_c": 10.9288,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Santo Domingo",
+      "country": "Dominican Republic",
+      "lat": 18.4667,
+      "lon": -69.9,
+      "temp_c": 24.01405714285714,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Sao Paulo",
+      "country": "Brazil",
+      "lat": -23.53165,
+      "lon": -46.61835,
+      "temp_c": 16.45,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Sarajevo",
+      "country": "Bosnia and Herzegovina",
+      "lat": 43.85,
+      "lon": 18.3833,
+      "temp_c": 13.024373576309795,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Sartorio",
+      "country": "Paraguay",
+      "lat": -21.9833,
+      "lon": -58.4333,
+      "temp_c": 20.557954545454546,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Seoul",
+      "country": "South Korea",
+      "lat": 37.5664,
+      "lon": 126.9997,
+      "temp_c": 18.331128848346637,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Seoul",
+      "country": "S\u00fcdkorea",
+      "lat": 37.57,
+      "lon": 127.0,
+      "temp_c": 26.1,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.2931,
+      "lon": 103.8558,
+      "temp_c": 29.94886104783599,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Skopje",
+      "country": "Macedonia",
+      "lat": 42.0,
+      "lon": 21.4333,
+      "temp_c": 16.867316513761466,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Sofia",
+      "country": "Bulgaria",
+      "lat": 42.6833,
+      "lon": 23.3167,
+      "temp_c": 14.003306727480044,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Stockholm",
+      "country": "Sweden",
+      "lat": 59.3333,
+      "lon": 18.05,
+      "temp_c": 10.35302166476625,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Sucre",
+      "country": "Bolivia",
+      "lat": -19.0431,
+      "lon": -65.2592,
+      "temp_c": 11.855275229357797,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Surabaya",
+      "country": "Indonesia",
+      "lat": -7.2496,
+      "lon": 112.7504,
+      "temp_c": 29.950000000000003,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Suva",
+      "country": "Fiji Islands",
+      "lat": -18.1333,
+      "lon": 178.4167,
+      "temp_c": 24.516761687571268,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tallinn",
+      "country": "Estonia",
+      "lat": 59.4339,
+      "lon": 24.7281,
+      "temp_c": 9.80011415525114,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Tallinn",
+      "country": "Estonie",
+      "lat": 59.43,
+      "lon": 24.73,
+      "temp_c": 23.3,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tarawa",
+      "country": "Kiribati",
+      "lat": -0.8833,
+      "lon": 169.5333,
+      "temp_c": 28.090296803652965,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tashkent",
+      "country": "Uzbekistan",
+      "lat": 41.3167,
+      "lon": 69.25,
+      "temp_c": 23.22070534698521,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Tbilisi",
+      "country": "Georgia",
+      "lat": 41.725,
+      "lon": 44.7908,
+      "temp_c": 17.6328,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Tegucigalpa",
+      "country": "Honduras",
+      "lat": 14.1,
+      "lon": -87.2167,
+      "temp_c": 19.230240549828178,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tehran",
+      "country": "Iran",
+      "lat": 35.7261,
+      "lon": 51.3304,
+      "temp_c": 22.68939566704675,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Thimphu",
+      "country": "Bhutan",
+      "lat": 27.4833,
+      "lon": 89.6,
+      "temp_c": 14.193264840182648,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tirana",
+      "country": "Albania",
+      "lat": 41.3275,
+      "lon": 19.8189,
+      "temp_c": 19.65496009122007,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "lat": 35.6895,
+      "lon": 139.6917,
+      "temp_c": 20.926393629124004,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tripoli",
+      "country": "Libya",
+      "lat": 32.89125,
+      "lon": 13.18,
+      "temp_c": 26.35,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Tunis",
+      "country": "Tunisia",
+      "lat": 36.8028,
+      "lon": 10.1797,
+      "temp_c": 22.101940639269404,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Ulaanbaatar",
+      "country": "Mongolia",
+      "lat": 47.9167,
+      "lon": 106.9167,
+      "temp_c": 6.059521094640821,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Vaduz",
+      "country": "Liechtenstein",
+      "lat": 47.1333,
+      "lon": 9.5167,
+      "temp_c": 10.339908779931585,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Valletta",
+      "country": "Malta",
+      "lat": 35.8997,
+      "lon": 14.5147,
+      "temp_c": 22.31387940841866,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Vatican City",
+      "country": "Vatican City",
+      "lat": 41.904,
+      "lon": 12.453,
+      "temp_c": 18.92093287827076,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Vestmannaeyjar",
+      "country": "Iceland",
+      "lat": 63.365,
+      "lon": -20.2075,
+      "temp_c": 6.422641509433962,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Victoria",
+      "country": "Seychelles Islands",
+      "lat": -4.6167,
+      "lon": 55.45,
+      "temp_c": 28.611314285714286,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Vienna",
+      "country": "Austria",
+      "lat": 48.2,
+      "lon": 16.3667,
+      "temp_c": 13.45108323831243,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Vientiane",
+      "country": "Lao People's Democratic Republic",
+      "lat": 17.96835,
+      "lon": 102.6,
+      "temp_c": 28.55,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Vilnius",
+      "country": "Lithuania",
+      "lat": 54.6833,
+      "lon": 25.3167,
+      "temp_c": 10.086316989737742,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Warsaw",
+      "country": "Poland",
+      "lat": 52.25,
+      "lon": 21.0,
+      "temp_c": 12.193174061433446,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Washington Harbor",
+      "country": "United States of America",
+      "lat": 48.0792,
+      "lon": -123.0439,
+      "temp_c": 9.325,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Washington Park",
+      "country": "United States of America",
+      "lat": 46.6,
+      "lon": -120.49,
+      "temp_c": 10.41875,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Wellington",
+      "country": "New Zealand",
+      "lat": -41.3,
+      "lon": 174.7833,
+      "temp_c": 13.66807297605473,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Windhoek",
+      "country": "Namibia",
+      "lat": -22.5717,
+      "lon": 17.0822,
+      "temp_c": 19.788154897494305,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Yamoussoukro",
+      "country": "Cote d'Ivoire",
+      "lat": 6.8167,
+      "lon": -5.2833,
+      "temp_c": 22.468509615384615,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Yangon",
+      "country": "Myanmar",
+      "lat": 16.7833,
+      "lon": 96.1667,
+      "temp_c": 30.52193396226415,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Yanngwa",
+      "country": "Myanmar",
+      "lat": 11.1167,
+      "lon": 98.8,
+      "temp_c": 29.508108108108107,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Yaounde",
+      "country": "Cameroon",
+      "lat": 3.87,
+      "lon": 11.52,
+      "temp_c": 29.79375,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Yaren",
+      "country": "Turkey",
+      "lat": 39.55,
+      "lon": 27.6167,
+      "temp_c": 17.94354285714286,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Yaren",
+      "country": "\u0422\u0443\u0440\u0446\u0438\u044f",
+      "lat": 39.55,
+      "lon": 27.62,
+      "temp_c": 34.0,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": false
+    },
+    {
+      "city": "Yerevan",
+      "country": "Armenia",
+      "lat": 40.1811,
+      "lon": 44.5136,
+      "temp_c": 17.611731207289296,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    },
+    {
+      "city": "Zagreb",
+      "country": "Croatia",
+      "lat": 45.8,
+      "lon": 16.0,
+      "temp_c": 14.620914285714285,
+      "humidity": null,
+      "wind_kph": null,
+      "precipitation_mm": null,
+      "anomaly": true
+    }
+  ],
+  "trend": [
+    {
+      "label": "2024-05",
+      "temperature": 25.153214069132808,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-06",
+      "temperature": 26.456035818839332,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-07",
+      "temperature": 26.800447948396343,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-08",
+      "temperature": 26.789677419354838,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-09",
+      "temperature": 25.12440232240437,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-10",
+      "temperature": 22.335382059800665,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-11",
+      "temperature": 19.424565927454015,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2024-12",
+      "temperature": 17.751894127377998,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-01",
+      "temperature": 17.392723942723944,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-02",
+      "temperature": 17.42468389224849,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-03",
+      "temperature": 20.095298791590796,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-04",
+      "temperature": 21.96505982905983,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-05",
+      "temperature": 23.30779824124772,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-06",
+      "temperature": 24.95810810810811,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-07",
+      "temperature": 25.298030453492224,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-08",
+      "temperature": 24.706055592322965,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-09",
+      "temperature": 23.37191722250727,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-10",
+      "temperature": 20.8722700198544,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-11",
+      "temperature": 18.367749102717482,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2025-12",
+      "temperature": 16.252224979321753,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-01",
+      "temperature": 14.713649597533824,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-02",
+      "temperature": 16.000476364968854,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-03",
+      "temperature": 17.256502471450485,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-04",
+      "temperature": 19.446281415626604,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-05",
+      "temperature": 21.421227663798806,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-06",
+      "temperature": 22.969715656046592,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-07",
+      "temperature": 23.1938089720245,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-08",
+      "temperature": 22.88282310110872,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-09",
+      "temperature": 21.709052092228863,
+      "precipitation": null,
+      "humidity": null
+    },
+    {
+      "label": "2026-10",
+      "temperature": 20.482837891399125,
+      "precipitation": null,
+      "humidity": null
+    }
+  ],
+  "regions": [
+    {
+      "name": "Bulgaria",
+      "rows": 2027,
+      "temperature": 15.115540207202761,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Indonesia",
+      "rows": 1757,
+      "temperature": 28.712066021627773,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Thailand",
+      "rows": 1754,
+      "temperature": 31.09429874572406,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Sudan",
+      "rows": 1751,
+      "temperature": 29.792233009708735,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Turkey",
+      "rows": 1751,
+      "temperature": 16.95990862364363,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Bolivia",
+      "rows": 1744,
+      "temperature": 17.26301605504587,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Iran",
+      "rows": 1711,
+      "temperature": 20.40654587960257,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Belgium",
+      "rows": 1659,
+      "temperature": 12.829174201326099,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Madagascar",
+      "rows": 1336,
+      "temperature": 24.658308383233532,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Vietnam",
+      "rows": 1332,
+      "temperature": 27.597672672672672,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Hungary",
+      "rows": 1020,
+      "temperature": 14.32950980392157,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Senegal",
+      "rows": 1010,
+      "temperature": 24.710792079207923,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Russia",
+      "rows": 932,
+      "temperature": 9.60332618025751,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Switzerland",
+      "rows": 928,
+      "temperature": 10.872629310344827,
+      "humidity": 0.0,
+      "wind": 0.0
+    },
+    {
+      "name": "Norway",
+      "rows": 911,
+      "temperature": 8.356970362239299,
+      "humidity": 0.0,
+      "wind": 0.0
+    }
+  ],
+  "correlations": [],
+  "anomalies": [
+    {
+      "city": "N'djamena",
+      "country": "Chad",
+      "date": "2024-05-21",
+      "temperature": 45.0,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-05-30",
+      "temperature": 45.0,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-05-30",
+      "temperature": 45.6,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-05-31",
+      "temperature": 45.7,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-05",
+      "temperature": 45.2,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-06",
+      "temperature": 45.9,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-07",
+      "temperature": 46.6,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "date": "2024-06-07",
+      "temperature": 45.0,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-08",
+      "temperature": 45.4,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-09",
+      "temperature": 45.4,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-10",
+      "temperature": 45.1,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Canberra",
+      "country": "Australia",
+      "date": "2024-06-13",
+      "temperature": -1.9,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Doha",
+      "country": "Qatar",
+      "date": "2024-06-12",
+      "temperature": 46.2,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-13",
+      "temperature": 45.4,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-15",
+      "temperature": 45.3,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-16",
+      "temperature": 46.6,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-17",
+      "temperature": 46.7,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-17",
+      "temperature": 46.1,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-18",
+      "temperature": 47.4,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Canberra",
+      "country": "Australia",
+      "date": "2024-06-19",
+      "temperature": -3.7,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-19",
+      "temperature": 47.8,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-19",
+      "temperature": 49.2,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-20",
+      "temperature": 47.9,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "date": "2024-06-20",
+      "temperature": 45.1,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Djibouti",
+      "country": "Djibouti",
+      "date": "2024-06-21",
+      "temperature": 45.0,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-21",
+      "temperature": 48.4,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-21",
+      "temperature": 47.2,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "date": "2024-06-21",
+      "temperature": 45.3,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Baghdad",
+      "country": "Iraq",
+      "date": "2024-06-22",
+      "temperature": 49.1,
+      "score": 0.0,
+      "reason": "temp IQR"
+    },
+    {
+      "city": "Kuwait City",
+      "country": "Kuwait",
+      "date": "2024-06-22",
+      "temperature": 47.8,
+      "score": 0.0,
+      "reason": "temp IQR"
+    }
+  ],
+  "forecasts": {
+    "available": true,
+    "reason": "Forecast metrics use a chronological held-out test segment. Results describe this location and dataset only.",
+    "target": "temperature",
+    "city": "Accra, Ghana",
+    "horizon_days": 7,
+    "models": [
+      {
+        "name": "Ridge",
+        "mae": 0.38090325567551286,
+        "rmse": 0.5018189331554942,
+        "r2": 0.14462553779443388
+      },
+      {
+        "name": "Random Forest",
+        "mae": 0.3598451957671985,
+        "rmse": 0.5021360991292471,
+        "r2": 0.14354394684532168
+      },
+      {
+        "name": "Extra Trees",
+        "mae": 0.3751219999999975,
+        "rmse": 0.521763213772227,
+        "r2": 0.07528243462662076
+      },
+      {
+        "name": "HistGradientBoosting",
+        "mae": 0.42258102143153947,
+        "rmse": 0.5650489520769924,
+        "r2": -0.08451195055471272
+      },
+      {
+        "name": "Persistence baseline",
+        "mae": 0.4666666666666668,
+        "rmse": 0.6126445407684077,
+        "r2": -0.2749094202898559
+      },
+      {
+        "name": "Validation-selected ensemble",
+        "mae": 0.3781285083353842,
+        "rmse": 0.5172001456210126,
+        "r2": 0.09138590139131508
+      }
+    ],
+    "series": [
+      {
+        "date": "2026-09-14",
+        "actual": 23.4,
+        "baseline": 23.8,
+        "ensemble": 23.656436511343,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-15",
+        "actual": 23.8,
+        "baseline": 23.4,
+        "ensemble": 23.703276584358516,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-16",
+        "actual": 23.9,
+        "baseline": 23.8,
+        "ensemble": 23.581979250399044,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-17",
+        "actual": 23.7,
+        "baseline": 23.9,
+        "ensemble": 23.747175694139283,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-18",
+        "actual": 23.5,
+        "baseline": 23.7,
+        "ensemble": 23.790503170501285,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-19",
+        "actual": 23.4,
+        "baseline": 23.5,
+        "ensemble": 23.759933366409435,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-20",
+        "actual": 22.8,
+        "baseline": 23.4,
+        "ensemble": 23.746133521468813,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-21",
+        "actual": 23.3,
+        "baseline": 22.8,
+        "ensemble": 23.447477540618124,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-22",
+        "actual": 23.0,
+        "baseline": 23.3,
+        "ensemble": 23.436238307166597,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-23",
+        "actual": 23.6,
+        "baseline": 23.0,
+        "ensemble": 23.28747898299779,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-24",
+        "actual": 23.4,
+        "baseline": 23.6,
+        "ensemble": 23.332359783809842,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-25",
+        "actual": 24.0,
+        "baseline": 23.4,
+        "ensemble": 23.443737262925826,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-26",
+        "actual": 23.5,
+        "baseline": 24.0,
+        "ensemble": 23.53538171267181,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-27",
+        "actual": 23.2,
+        "baseline": 23.5,
+        "ensemble": 23.626115578955336,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-28",
+        "actual": 23.6,
+        "baseline": 23.2,
+        "ensemble": 23.486866707797077,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-29",
+        "actual": 22.6,
+        "baseline": 23.6,
+        "ensemble": 23.56896376104087,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-09-30",
+        "actual": 23.9,
+        "baseline": 22.6,
+        "ensemble": 23.412001442665346,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-01",
+        "actual": 24.5,
+        "baseline": 23.9,
+        "ensemble": 23.775495483109943,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-02",
+        "actual": 22.5,
+        "baseline": 24.5,
+        "ensemble": 24.104111095639055,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-03",
+        "actual": 22.8,
+        "baseline": 22.5,
+        "ensemble": 23.82029325648101,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-04",
+        "actual": 23.6,
+        "baseline": 22.8,
+        "ensemble": 23.642471070940893,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-05",
+        "actual": 23.6,
+        "baseline": 23.6,
+        "ensemble": 23.704018215596587,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-06",
+        "actual": 24.1,
+        "baseline": 23.6,
+        "ensemble": 23.687145054990495,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-07",
+        "actual": 23.6,
+        "baseline": 24.1,
+        "ensemble": 23.881794834366787,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-08",
+        "actual": 24.2,
+        "baseline": 23.6,
+        "ensemble": 23.95744504274611,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-09",
+        "actual": 24.3,
+        "baseline": 24.2,
+        "ensemble": 23.97294114791135,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-10",
+        "actual": 24.5,
+        "baseline": 24.3,
+        "ensemble": 24.57200983982548,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-11",
+        "actual": 24.4,
+        "baseline": 24.5,
+        "ensemble": 24.045946445496426,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-12",
+        "actual": 24.1,
+        "baseline": 24.4,
+        "ensemble": 24.229488821677656,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-13",
+        "actual": 24.4,
+        "baseline": 24.1,
+        "ensemble": 24.23801785957272,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-14",
+        "actual": null,
+        "baseline": 24.4,
+        "ensemble": 24.423954829228848,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-15",
+        "actual": null,
+        "baseline": 24.423954829228848,
+        "ensemble": 24.14502970400654,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-16",
+        "actual": null,
+        "baseline": 24.14502970400654,
+        "ensemble": 24.383642519682567,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-17",
+        "actual": null,
+        "baseline": 24.383642519682567,
+        "ensemble": 24.411490403249488,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-18",
+        "actual": null,
+        "baseline": 24.411490403249488,
+        "ensemble": 24.285221013839546,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-19",
+        "actual": null,
+        "baseline": 24.285221013839546,
+        "ensemble": 24.280073976725625,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "date": "2026-10-20",
+        "actual": null,
+        "baseline": 24.280073976725625,
+        "ensemble": 24.394387808817815,
+        "lower": null,
+        "upper": null
+      }
+    ],
+    "feature_importance": [
+      {
+        "feature": "rolling_mean_7",
+        "importance": 0.5363613631625767
+      },
+      {
+        "feature": "rolling_std_7",
+        "importance": 0.2683513228491465
+      },
+      {
+        "feature": "lag_14",
+        "importance": 0.08667613131846284
+      },
+      {
+        "feature": "lag_1",
+        "importance": 0.06553443254393979
+      },
+      {
+        "feature": "lag_3",
+        "importance": 0.027866637502002613
+      },
+      {
+        "feature": "dayofyear_cos",
+        "importance": 0.007773829343285212
+      },
+      {
+        "feature": "dayofyear_sin",
+        "importance": 0.005343070049311362
+      },
+      {
+        "feature": "lag_2",
+        "importance": 0.00209321323127518
+      },
+      {
+        "feature": "lag_7",
+        "importance": 0.0
+      }
+    ]
+  },
+  "air_quality": {
+    "available": false,
+    "fields": [],
+    "correlations": [],
+    "note": "No recognizable air-quality/pollutant columns were found. The air-quality analysis remains unavailable; no substitute measurements were invented."
+  },
+  "data_quality": [
+    {
+      "column": "country",
+      "missing_pct": 0.0,
+      "unique": 211
+    },
+    {
+      "column": "location_name",
+      "missing_pct": 0.0,
+      "unique": 268
+    },
+    {
+      "column": "latitude",
+      "missing_pct": 0.0,
+      "unique": 422
+    },
+    {
+      "column": "longitude",
+      "missing_pct": 0.0,
+      "unique": 428
+    },
+    {
+      "column": "timezone",
+      "missing_pct": 0.0,
+      "unique": 201
+    },
+    {
+      "column": "last_updated_epoch",
+      "missing_pct": 0.0,
+      "unique": 1575
+    },
+    {
+      "column": "last_updated",
+      "missing_pct": 0.0,
+      "unique": 28420
+    },
+    {
+      "column": "temperature_celsius",
+      "missing_pct": 0.0,
+      "unique": 709
+    },
+    {
+      "column": "temperature_fahrenheit",
+      "missing_pct": 0.0,
+      "unique": 1180
+    },
+    {
+      "column": "condition_text",
+      "missing_pct": 0.0,
+      "unique": 58
+    }
+  ]
+}

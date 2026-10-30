@@ -1,0 +1,31 @@
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+out/
+build/
+
+# Environment
+.env
+.env.*
+!.env.example
+*.log
+
+# Raw and generated datasets
+data/*.csv
+data/open_meteo_cache/
+public/data/weather_enrichment.json
+
+# Generated analysis output
+analysis_error.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
