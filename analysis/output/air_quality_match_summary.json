@@ -1,0 +1,30 @@
+{
+  "air_quality_city_days": 82542,
+  "weather_city_days": 170511,
+  "matched_city_days": 68172,
+  "city_day_match_rate_pct": 82.59,
+  "air_quality_city_country_pairs": 143,
+  "matched_city_country_pairs": 143,
+  "matched_observation_rows": 208272,
+  "pollutants_analyzed": [
+    "co",
+    "no2",
+    "o3",
+    "pm10",
+    "pm25",
+    "so2"
+  ],
+  "weather_variables": [
+    "temperature_2m_mean",
+    "relative_humidity_2m_mean",
+    "wind_speed_10m_mean",
+    "precipitation_sum",
+    "cloud_cover_mean"
+  ],
+  "correlation_methods": [
+    "pooled Pearson",
+    "pooled Spearman",
+    "within-city Pearson after city-mean demeaning"
+  ],
+  "interpretation_warning": "Correlations are observational associations, not causal effects. Pooled observations are repeated over time and within-city demeaning does not remove seasonality, time trends, or all confounding."
+}

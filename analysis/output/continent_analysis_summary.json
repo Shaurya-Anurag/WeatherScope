@@ -1,0 +1,143 @@
+{
+  "source": "enriched_weather.csv",
+  "method": "Descriptive continent comparisons using six continent categories. Observation-weighted averages and equal-country averages are reported separately.",
+  "countries_in_source": 211,
+  "countries_mapped": 211,
+  "unmapped_countries": [],
+  "continents_present": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "North America",
+    "Oceania",
+    "South America"
+  ],
+  "date_range": [
+    "2024-05-16",
+    "2026-10-13"
+  ],
+  "observation_weighted": [
+    {
+      "continent": "Africa",
+      "observations": 44681,
+      "countries": 54,
+      "cities": 62,
+      "temperature_2m_mean": 23.939777534074885,
+      "relative_humidity_2m_mean": 66.84111814865379,
+      "wind_speed_10m_mean": 10.205422886685616,
+      "precipitation_sum": 2.9554463866072824,
+      "cloud_cover_mean": 54.39045679371545
+    },
+    {
+      "continent": "Asia",
+      "observations": 44211,
+      "countries": 55,
+      "cities": 71,
+      "temperature_2m_mean": 21.70216461966479,
+      "relative_humidity_2m_mean": 62.66972020537875,
+      "wind_speed_10m_mean": 8.29531338354708,
+      "precipitation_sum": 3.254122277261315,
+      "cloud_cover_mean": 46.74610391079143
+    },
+    {
+      "continent": "Europe",
+      "observations": 39878,
+      "countries": 49,
+      "cities": 59,
+      "temperature_2m_mean": 13.37412859220623,
+      "relative_humidity_2m_mean": 71.65276593610513,
+      "wind_speed_10m_mean": 9.888517478308842,
+      "precipitation_sum": 2.2397612718792317,
+      "cloud_cover_mean": 55.0685340287878
+    },
+    {
+      "continent": "North America",
+      "observations": 19910,
+      "countries": 27,
+      "cities": 37,
+      "temperature_2m_mean": 24.12820190858865,
+      "relative_humidity_2m_mean": 75.29347061778002,
+      "wind_speed_10m_mean": 12.027553992968357,
+      "precipitation_sum": 3.7167704671019584,
+      "cloud_cover_mean": 59.689603214465095
+    },
+    {
+      "continent": "Oceania",
+      "observations": 11346,
+      "countries": 13,
+      "cities": 20,
+      "temperature_2m_mean": 24.251092896174864,
+      "relative_humidity_2m_mean": 79.66190728009872,
+      "wind_speed_10m_mean": 14.541759210294376,
+      "precipitation_sum": 7.211484223514895,
+      "cloud_cover_mean": 71.78071567072097
+    },
+    {
+      "continent": "South America",
+      "observations": 10485,
+      "countries": 13,
+      "cities": 21,
+      "temperature_2m_mean": 20.645321888412017,
+      "relative_humidity_2m_mean": 75.08679065331425,
+      "wind_speed_10m_mean": 8.8213924654268,
+      "precipitation_sum": 3.7096900333810203,
+      "cloud_cover_mean": 61.68173581306628
+    }
+  ],
+  "country_weighted": [
+    {
+      "continent": "Africa",
+      "countries": 54,
+      "temperature_2m_mean": 24.175484005343943,
+      "relative_humidity_2m_mean": 67.0016296629263,
+      "wind_speed_10m_mean": 10.281766644400774,
+      "precipitation_sum": 2.932290632655612,
+      "cloud_cover_mean": 53.51208885751488
+    },
+    {
+      "continent": "Asia",
+      "countries": 55,
+      "temperature_2m_mean": 22.7692297904037,
+      "relative_humidity_2m_mean": 61.54481218129725,
+      "wind_speed_10m_mean": 8.661774820866846,
+      "precipitation_sum": 3.672992256537147,
+      "cloud_cover_mean": 45.90397809698883
+    },
+    {
+      "continent": "Europe",
+      "countries": 49,
+      "temperature_2m_mean": 14.1589160262222,
+      "relative_humidity_2m_mean": 72.37152862670753,
+      "wind_speed_10m_mean": 10.187747521126253,
+      "precipitation_sum": 2.541576525594575,
+      "cloud_cover_mean": 56.68279582025902
+    },
+    {
+      "continent": "North America",
+      "countries": 27,
+      "temperature_2m_mean": 24.357780542916935,
+      "relative_humidity_2m_mean": 75.27535737333977,
+      "wind_speed_10m_mean": 12.078300726298387,
+      "precipitation_sum": 4.080391342855128,
+      "cloud_cover_mean": 60.53212902401336
+    },
+    {
+      "continent": "Oceania",
+      "countries": 13,
+      "temperature_2m_mean": 24.249688825514063,
+      "relative_humidity_2m_mean": 79.66522703936181,
+      "wind_speed_10m_mean": 14.541318801979315,
+      "precipitation_sum": 7.209464790437289,
+      "cloud_cover_mean": 71.77966386831453
+    },
+    {
+      "continent": "South America",
+      "countries": 13,
+      "temperature_2m_mean": 20.509547738491342,
+      "relative_humidity_2m_mean": 77.01846595803106,
+      "wind_speed_10m_mean": 8.80874947697725,
+      "precipitation_sum": 3.969079228161601,
+      "cloud_cover_mean": 65.19085201203458
+    }
+  ]
+}

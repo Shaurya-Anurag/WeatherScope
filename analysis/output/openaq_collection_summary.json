@@ -1,0 +1,88 @@
+{
+  "source": "OpenAQ API v3",
+  "period": [
+    "2024-05-16",
+    "2026-10-13"
+  ],
+  "minimum_daily_coverage_pct": 75.0,
+  "sensors_in_inventory": 8956,
+  "sensors_completed": 8949,
+  "sensors_remaining": 7,
+  "failed_sensors": 7,
+  "raw_daily_records": 3144449,
+  "quality_filtered_records": 2347689,
+  "city_daily_records": 247303,
+  "matched_city_country_pairs": 143,
+  "pollutants": [
+    "co",
+    "no2",
+    "o3",
+    "pm10",
+    "pm25",
+    "so2"
+  ],
+  "units_by_pollutant": {
+    "co": [
+      "ppb",
+      "ppm",
+      "\u00b5g/m\u00b3"
+    ],
+    "no2": [
+      "ppb",
+      "ppm",
+      "\u00b5g/m\u00b3"
+    ],
+    "o3": [
+      "ppm",
+      "\u00b5g/m\u00b3"
+    ],
+    "pm10": [
+      "\u00b5g/m\u00b3"
+    ],
+    "pm25": [
+      "\u00b5g/m\u00b3"
+    ],
+    "so2": [
+      "ppb",
+      "ppm",
+      "\u00b5g/m\u00b3"
+    ]
+  },
+  "failures": [
+    {
+      "sensor_id": 159,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    },
+    {
+      "sensor_id": 4186,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    },
+    {
+      "sensor_id": 4244,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    },
+    {
+      "sensor_id": 4364,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    },
+    {
+      "sensor_id": 4461,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    },
+    {
+      "sensor_id": 4570,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    },
+    {
+      "sensor_id": 6587300,
+      "error": "HTTPError",
+      "message": "HTTP Error 408: Request Timeout"
+    }
+  ]
+}
