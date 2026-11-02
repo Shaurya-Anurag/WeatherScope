@@ -512,6 +512,21 @@ def main():
                 'locations': int(r['count'])
             } for _, r in precip_summary.iterrows()]
 
+
+        annual_coverage = []
+        for year, group in climate_base.groupby('_year'):
+            annual_coverage.append({
+                'year': int(year),
+                'observations': int(len(group)),
+                'locations': int(group['_place'].nunique()),
+                'matched_location_months': int(
+                    len(loc_month.loc[loc_month['_year'] == year])
+                )
+            })
+
+
+
+
         eligible_locations = int(loc_month.groupby('_place')['_year'].nunique().ge(2).sum())
         climate.update({
             'available': bool(yoy_rows or anomaly_rows),
@@ -521,7 +536,8 @@ def main():
             'coverage': {
                 'eligible_locations': eligible_locations,
                 'matched_location_months': int(sum(r['matched_location_months'] for r in yoy_rows)),
-                'years': years
+                'years': years,
+                'annual_observations': annual_coverage
             },
             'note': ('Temperature anomalies are relative to each location’s own calendar-month average over the available dataset. '
                      'Year-over-year changes use only location-month pairs observed in both adjacent years. '
@@ -853,7 +869,7 @@ def main():
 
             'date_max': date_max.strftime('%Y-%m-%d') if pd.notna(date_max) else None,
 
-            'timestamp_note': 'lastupdated is treated as observation time; it is not assumed to represent a continuous historical series.',
+            'timestamp_note': 'Observation date (obs_date) is used for daily temporal analysis. Last-updated timestamps are retained as source metadata and are not treated as observation dates.',
 
             'warnings': warnings_list[:12]
 

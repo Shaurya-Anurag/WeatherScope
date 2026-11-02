@@ -202,6 +202,12 @@ export type ClimateData = {
     eligible_locations: number;
     matched_location_months: number;
     years: number[];
+    annual_observations: {
+      year: number;
+      observations: number;
+      locations: number;
+      matched_location_months: number;
+    }[];
   };
   note: string;
 };

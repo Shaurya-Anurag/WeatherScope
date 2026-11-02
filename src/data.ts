@@ -58,6 +58,7 @@ const empty: DashboardData = {
       eligible_locations: 0,
       matched_location_months: 0,
       years: [],
+      annual_observations: [],
     },
     note: 'No climate analysis has been generated yet.',
   },

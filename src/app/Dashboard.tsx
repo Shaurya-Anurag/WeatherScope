@@ -890,6 +890,18 @@ export default function Dashboard({
       aggregation_method: string;
     }>;
 
+    continent_country_weighted?: Array<{
+      name: string;
+      countries: number;
+      temperature: number | null;
+      humidity: number | null;
+      wind: number | null;
+      precipitation: number | null;
+      cloud_cover: number | null;
+    }>;
+
+
+
     continent_coverage?: {
       classified_rows: number;
       unclassified_rows: number;
@@ -904,7 +916,7 @@ export default function Dashboard({
       scaling_note?: string;
     };
   };
-
+  const anomalyBreakdown = extras.anomaly_breakdown;
 
 
   return (
@@ -955,7 +967,7 @@ export default function Dashboard({
 
           <a href="#anomalies">Anomalies</a>
 
-          
+
 
         </nav>
 
@@ -1262,8 +1274,9 @@ export default function Dashboard({
 
 
 
-        <div className="right-stack">
 
+
+          <div className="right-stack">
           <Panel title="Weather profile">
 
             <div className="mini-stat-grid">
@@ -1410,14 +1423,8 @@ export default function Dashboard({
             )}
 
           </Panel>
-
         </div>
-
       </div>
-
-
-
-
 
       <div className="lower-grid" id="environment">
         <Panel title="Weather trend profile">
@@ -1647,6 +1654,77 @@ export default function Dashboard({
                   </tbody>
                 </table>
               </div>
+
+
+              {extras.continent_country_weighted?.length ? (
+                <>
+                  <div className="subhead">
+                    COUNTRY-WEIGHTED MEAN TEMPERATURE
+                  </div>
+                  <ResponsiveContainer width="100%" height={200}>
+                    <BarChart
+                      data={extras.continent_country_weighted}
+                      margin={{ top: 8, right: 12, left: 0, bottom: 8 }}
+                    >
+                      <CartesianGrid
+                        stroke="#263332"
+                        strokeDasharray="3 4"
+                        vertical={false}
+                      />
+                      <XAxis
+                        dataKey="name"
+                        tick={{ fill: '#81928f', fontSize: 10 }}
+                        axisLine={false}
+                        tickLine={false}
+                        interval={0}
+                      />
+                      <YAxis
+                        tick={{ fill: '#81928f', fontSize: 10 }}
+                        axisLine={false}
+                        tickLine={false}
+                        label={{
+                          value: '°C',
+                          angle: -90,
+                          position: 'insideLeft',
+                          fill: '#81928f',
+                        }}
+                      />
+                      <Tooltip
+                        contentStyle={{
+                          background: '#0c1413',
+                          border: '1px solid #2c4140',
+                          borderRadius: 8,
+                        }}
+                        formatter={(value) => [
+                          value == null
+                            ? 'Unavailable'
+                            : `${Number(value).toFixed(2)} °C`,
+                          'Country-weighted mean',
+                        ]}
+                      />
+                      <Bar
+                        dataKey="temperature"
+                        name="Country-weighted mean"
+                        fill="#f6bc42"
+                        radius={[4, 4, 0, 0]}
+                      />
+                    </BarChart>
+                  </ResponsiveContainer>
+                  <div className="model-foot">
+                    Each country contributes equally to its continent's
+                    average, regardless of its observation count.
+                    Countries represented: {
+                      extras.continent_country_weighted.reduce(
+                        (sum, item) => sum + item.countries,
+                        0
+                      )
+                    }.
+                  </div>
+                </>
+              ) : null}
+
+
+
               <div className="model-foot">
                 {extras.continent_coverage
                   ? `${extras.continent_coverage.classification_percentage.toFixed(1)}% of observations classified · ${extras.continent_coverage.classified_rows.toLocaleString()} classified · ${extras.continent_coverage.unclassified_rows.toLocaleString()} unclassified.`
@@ -1661,6 +1739,7 @@ export default function Dashboard({
           )}
         </Panel>
       ) : null}
+      <div className="right-stack">
         <Panel title="Seasonal observation profile">
           {extras.seasonal?.length ? (
             <>
@@ -1693,27 +1772,265 @@ export default function Dashboard({
           ) : (
             <Empty message="Seasonal summaries require valid timestamps and temperature observations." />
           )}
-        </Panel>                
-                
+        </Panel>
+        <Panel title="Seasonal insights" className="seasonal-insights-panel">
+  {extras.seasonal?.length ? (
+    (() => {
 
-              
-      <Panel
-        title="Air quality · Weather relationships"
-        className="air-panel"
+      const rows = extras.seasonal;
+
+      type SeasonalRow = (typeof rows)[number];
+
+      type TemperatureRow = SeasonalRow & {
+        temperature: number;
+      };
+
+      type HumidityRow = SeasonalRow & {
+        humidity: number;
+      };
+
+      const tempRows = rows.filter(
+        (item): item is TemperatureRow =>
+          item.temperature != null &&
+          Number.isFinite(item.temperature)
+      );
+
+      const humidityRows = rows.filter(
+        (item): item is HumidityRow =>
+          item.humidity != null &&
+          Number.isFinite(item.humidity)
+      );
+
+      const warmest = tempRows.length
+        ? tempRows.reduce((a, b) =>
+            b.temperature > a.temperature ? b : a
+          )
+        : null;
+
+      const coolest = tempRows.length
+        ? tempRows.reduce((a, b) =>
+            b.temperature < a.temperature ? b : a
+          )
+        : null;
+
+      const highestHumidity = humidityRows.length
+        ? humidityRows.reduce((a, b) =>
+            b.humidity > a.humidity ? b : a
+          )
+        : null;
+
+      const lowestHumidity = humidityRows.length
+        ? humidityRows.reduce((a, b) =>
+            b.humidity < a.humidity ? b : a
+          )
+        : null;
+
+      const northern = rows.filter((item) =>
+        item.hemisphere.toLowerCase().includes('north')
+      );
+
+      const southern = rows.filter((item) =>
+        item.hemisphere.toLowerCase().includes('south')
+      );
+
+      const getRange = (
+        items: SeasonalRow[],
+        field: 'temperature' | 'humidity'
+      ) => {
+        const values = items
+          .map((item) => item[field])
+          .filter(
+            (value): value is number =>
+              value != null && Number.isFinite(value)
+          );
+
+        return values.length
+          ? {
+              min: Math.min(...values),
+              max: Math.max(...values),
+              spread: Math.max(...values) - Math.min(...values),
+            }
+          : null;
+      };
+
+      const northTemp = getRange(northern, 'temperature');
+      const southTemp = getRange(southern, 'temperature');
+      const northHumidity = getRange(northern, 'humidity');
+      const southHumidity = getRange(southern, 'humidity');
+
+      const getAverageHumidity = (items: SeasonalRow[]) => {
+        const values = items
+          .map((item) => item.humidity)
+          .filter(
+            (value): value is number =>
+              value != null && Number.isFinite(value)
+          );
+
+        return values.length
+          ? values.reduce((sum, value) => sum + value, 0) / values.length
+          : null;
+      };
+
+      const northAvgHumidity = getAverageHumidity(northern);
+      const southAvgHumidity = getAverageHumidity(southern);
+
+
+      return (
+        <div className="seasonal-insights-content">
+          <div className="seasonal-extremes">
+            <div className="seasonal-insight-card">
+              <div className="seasonal-insight-heading">
+                <span className="seasonal-icon warm">°</span>
+                <b>Temperature extremes</b>
+              </div>
+            {warmest ? (
+              <div className="seasonal-extreme-row">
+                <span>
+                  Warmest: {warmest.hemisphere} · {warmest.season}
+                </span>
+                <strong className="warm-value">
+                  {fmt(warmest.temperature, 1)} °C
+                </strong>
+              </div>
+            ) : null}
+
+            {coolest ? (
+              <div className="seasonal-extreme-row">
+                <span>
+                  Coolest: {coolest.hemisphere} · {coolest.season}
+                </span>
+                <strong className="cool-value">
+                  {fmt(coolest.temperature, 1)} °C
+                </strong>
+              </div>
+            ) : null}
+            </div>
+
+            <div className="seasonal-insight-card">
+              <div className="seasonal-insight-heading">
+                <span className="seasonal-icon humid">%</span>
+                <b>Humidity extremes</b>
+              </div>
+            {highestHumidity ? (
+              <div className="seasonal-extreme-row">
+                <span>
+                  Highest: {highestHumidity.hemisphere} · {highestHumidity.season}
+                </span>
+                <strong className="humid-value">
+                  {fmt(highestHumidity.humidity, 1)}%
+                </strong>
+              </div>
+            ) : null}
+            {lowestHumidity ? (
+              <div className="seasonal-extreme-row">
+                <span>
+                  Lowest: {lowestHumidity.hemisphere} · {lowestHumidity.season}
+                </span>
+                <strong className="humid-value">
+                  {fmt(lowestHumidity.humidity, 1)}%
+                </strong>
+              </div>
+            ) : null}
+            </div>
+          </div>
+
+          <div className="seasonal-insight-card hemisphere-card">
+            <div className="seasonal-insight-heading">
+              <span className="seasonal-icon comparison">↔</span>
+              <b>Hemisphere comparison</b>
+            </div>
+
+            <div className="hemisphere-columns">
+              <div>
+                <b>Northern Hemisphere</b>
+                {northTemp && northHumidity ? (
+                  <p>
+                    Temperature range: {fmt(northTemp.min, 1)}–{fmt(northTemp.max, 1)} °C.
+                    Humidity range: {fmt(northHumidity.min, 1)}–{fmt(northHumidity.max, 1)}%.
+                  </p>
+                ) : (
+                  <p>Insufficient northern hemisphere observations.</p>
+                )}
+              </div>
+
+              <div>
+                <b>Southern Hemisphere</b>
+                {southTemp && southHumidity ? (
+                  <p>
+                    Temperature range: {fmt(southTemp.min, 1)}–{fmt(southTemp.max, 1)} °C.
+                    Humidity range: {fmt(southHumidity.min, 1)}–{fmt(southHumidity.max, 1)}%.
+                  </p>
+                ) : (
+                  <p>Insufficient southern hemisphere observations.</p>
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div className="seasonal-insight-card key-observation">
+            <div className="seasonal-insight-heading">
+              <span className="seasonal-icon warm">↗</span>
+              <b>Key observation</b>
+            </div>
+
+            <div className="seasonal-observation-text">
+              {northTemp && southTemp ? (
+                <>
+                  The Northern Hemisphere has a seasonal temperature
+                  spread of <strong>{fmt(northTemp.spread, 1)} °C</strong>,
+                  compared with <strong>{fmt(southTemp.spread, 1)} °C</strong>
+                  {' '}in the Southern Hemisphere.
+                </>
+              ) : (
+                'Temperature comparisons require observations from both hemispheres.'
+              )}
+
+              {northAvgHumidity != null && southAvgHumidity != null && (
+                <>
+                  {' '}Average seasonal humidity is{' '}
+                  <strong>
+                    {southAvgHumidity > northAvgHumidity
+                      ? 'higher in the Southern Hemisphere'
+                      : southAvgHumidity < northAvgHumidity
+                        ? 'higher in the Northern Hemisphere'
+                        : 'similar across both hemispheres'}
+                  </strong>.
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    })()
+  ) : (
+    <Empty message="Seasonal insights require valid seasonal observations." />
+  )}
+</Panel>
+
+
+      </div>
+
+      <div
+        className="air-panel-wrap"
+        style={{ gridColumn: '1 / -1', width: '100%', minWidth: 0 }}
       >
+        <Panel
+          title="Air quality · Weather relationships"
+          className="air-panel"
+        >
         <div className="air-overview">
           <div className="air-icon">
             <Wind size={23} />
           </div>
-              
+
           <div className="air-summary">
             {d.air_quality.available
               ? 'OPENAQ OBSERVATIONS · SIX POLLUTANTS'
               : 'AIR QUALITY DATA UNAVAILABLE'}
           </div>
-            
+
           <p>{d.air_quality.note}</p>
-            
+
           {d.air_quality.available && (
             <div className="quality-coverage">
               <div>
@@ -1722,14 +2039,14 @@ export default function Dashboard({
                 </strong>
                 <span>Matched city-days</span>
               </div>
-          
+
               <div>
                 <strong>
                   {d.air_quality.matched_cities ?? '—'}
                 </strong>
                 <span>City-country pairs</span>
               </div>
-          
+
               <div>
                 <strong>
                   {d.air_quality.match_rate_pct?.toFixed(1) ?? '—'}%
@@ -1739,12 +2056,12 @@ export default function Dashboard({
             </div>
           )}
         </div>
-        
+
         <div className="air-correlations">
           <div className="subhead">
             STRONGEST WITHIN-CITY CORRELATIONS
           </div>
-        
+
           {d.air_quality.correlations.length ? (
             d.air_quality.correlations.map((correlation, index) => (
               <div className="quality-row" key={index}>
@@ -1752,7 +2069,7 @@ export default function Dashboard({
                   {correlation.pollutant} ({correlation.unit}) ↔{' '}
                   {correlation.feature.replaceAll('_', ' ')}
                 </span>
-            
+
                 <div className="quality-track">
                   <i
                     style={{
@@ -1764,9 +2081,9 @@ export default function Dashboard({
                     }}
                   />
                 </div>
-                  
+
                 <b>{fmt(correlation.correlation, 2)}</b>
-                  
+
                 <small>
                   {correlation.sample_size?.toLocaleString()} city-days ·{' '}
                   {correlation.cities} cities
@@ -1777,7 +2094,7 @@ export default function Dashboard({
             <Empty message="No sufficiently covered pollutant-weather relationships available." />
           )}
         </div>
-        
+
         <div className="model-foot">
           Correlations are observational, not causal. Gas pollutant units
           are analyzed separately. Full results are available in the
@@ -1785,7 +2102,8 @@ export default function Dashboard({
         </div>
       </Panel>
       </div>
-        
+      </div>
+
 
 
 
@@ -2066,6 +2384,66 @@ export default function Dashboard({
                   <b>{d.climate.coverage.years.join(" · ")}</b>
                 </div>
               </div>
+
+                            {d.climate.coverage.annual_observations?.length ? (
+                <>
+                  <div className="subhead">
+                    ANNUAL OBSERVATION COVERAGE
+                  </div>
+                  <ResponsiveContainer width="100%" height={210}>
+                    <BarChart
+                      data={d.climate.coverage.annual_observations}
+                      margin={{ top: 8, right: 12, left: 0, bottom: 8 }}
+                    >
+                      <CartesianGrid
+                        stroke="#263332"
+                        strokeDasharray="3 4"
+                        vertical={false}
+                      />
+                      <XAxis
+                        dataKey="year"
+                        tick={{ fill: '#81928f', fontSize: 11 }}
+                        axisLine={false}
+                        tickLine={false}
+                      />
+                      <YAxis
+                        tick={{ fill: '#81928f', fontSize: 10 }}
+                        axisLine={false}
+                        tickLine={false}
+                        tickFormatter={(value) =>
+                          `${(Number(value) / 1000).toFixed(0)}k`
+                        }
+                      />
+                      <Tooltip
+                        contentStyle={{
+                          background: '#0c1413',
+                          border: '1px solid #2c4140',
+                          borderRadius: 8,
+                        }}
+                        formatter={(value) => [
+                          Number(value).toLocaleString(),
+                          'Observations',
+                        ]}
+                      />
+                      <Bar
+                        dataKey="observations"
+                        name="Observations"
+                        fill="#29b8ec"
+                        radius={[4, 4, 0, 0]}
+                      />
+                    </BarChart>
+                  </ResponsiveContainer>
+                  <div className="model-foot">
+                    Distinct locations and matched location-months are
+                    calculated from valid temperature observations.
+                    2024 begins May 16; 2026 ends October 13. Both are
+                    partial years.
+                  </div>
+                </>
+              ) : null}
+
+
+
               <div className="model-foot">
                 {d.climate.method}
               </div>
@@ -2079,7 +2457,7 @@ export default function Dashboard({
       </section>
 
 
-      
+
       {/* FORECAST LAB */}
       <section id="forecast" className="section-block">
         <div className="section-heading">
@@ -2145,43 +2523,179 @@ export default function Dashboard({
             ) : (
               <Empty message={d.forecasts.reason} />
             )}
+
+
+
+
+
+            <div className="subhead">
+              FORECAST RESIDUALS · ACTUAL − PREDICTED
+            </div>
+
+            {d.forecasts.series.some((point) => point.actual != null) ? (
+              <>
+                <ResponsiveContainer width="100%" height={190}>
+                  <LineChart
+                    data={d.forecasts.series.flatMap((point) =>
+                      point.actual == null || point.ensemble == null
+                        ? []
+                        : [{
+                            date: point.date,
+                            residual: Number(
+                              (point.actual - point.ensemble).toFixed(3)
+                            ),
+                          }]
+                    )}
+                    margin={{ top: 8, right: 12, left: 0, bottom: 4 }}
+                  >
+                    <CartesianGrid
+                      stroke="#263332"
+                      strokeDasharray="3 4"
+                    />
+                    <XAxis
+                      dataKey="date"
+                      tick={{ fill: '#7d918e', fontSize: 10 }}
+                    />
+                    <YAxis
+                      tick={{ fill: '#7d918e', fontSize: 10 }}
+                      tickFormatter={(value) => `${value}°`}
+                    />
+                    <ReferenceLine
+                      y={0}
+                      stroke="#f6bc42"
+                      strokeDasharray="4 4"
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        background: '#0c1413',
+                        border: '1px solid #2c4140',
+                        borderRadius: 8,
+                      }}
+                      formatter={(value) => [
+                        `${Number(value).toFixed(3)} °C`,
+                        'Residual',
+                      ]}
+                    />
+                    <Line
+                      type="monotone"
+                      dataKey="residual"
+                      name="Forecast residual"
+                      stroke="#f16b4f"
+                      strokeWidth={2}
+                      dot={false}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
+
+                <div className="model-foot">
+                  Positive residuals indicate under-prediction; negative
+                  residuals indicate over-prediction. Only evaluated
+                  observations are included. Zero represents a perfect
+                  prediction.
+                </div>
+              </>
+            ) : (
+              <Empty message="Residual analysis requires evaluated forecast observations." />
+            )}
+
           </Panel>
 
-          <Panel title="Model scorecard">
+
+          <Panel title="Model scorecard" className="scorecard-panel">
             {d.forecasts.models.length ? (
-              <div className="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>MODEL</th>
-                      <th>MAE ↓</th>
-                      <th>RMSE ↓</th>
-                      <th>R²</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {d.forecasts.models.map((model) => (
-                      <tr key={model.name}>
-                        <td>{model.name}</td>
-                        <td>{fmt(model.mae, 3)}</td>
-                        <td>{fmt(model.rmse, 3)}</td>
-                        <td>{fmt(model.r2, 3)}</td>
+              <>
+                <div className="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>MODEL</th>
+                        <th>MAE ↓</th>
+                        <th>RMSE ↓</th>
+                        <th>R²</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                    </thead>
+                    <tbody>
+                      {d.forecasts.models.map((model) => (
+                        <tr key={model.name}>
+                          <td>{model.name}</td>
+                          <td>{fmt(model.mae, 3)}</td>
+                          <td>{fmt(model.rmse, 3)}</td>
+                          <td>{fmt(model.r2, 3)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="model-foot">
+                  <Gauge size={15} />
+                  <span>Lower MAE / RMSE is better. R² may be negative.</span>
+                </div>
+
+                {(() => {
+                  const bestModel =
+                    d.forecasts.models.find((model) =>
+                      model.name.toLowerCase().includes('ensemble')
+                    ) ??
+                    [...d.forecasts.models].sort(
+                      (a, b) => a.mae - b.mae
+                    )[0];
+
+                  return bestModel ? (
+
+
+                    <>
+                      <div className="subhead">SELECTED MODEL</div>
+
+                      <div className="scorecard-best compact">
+                        <strong>{bestModel.name}</strong>
+                        <span>MAE <b>{fmt(bestModel.mae, 3)}</b></span>
+                        <span>RMSE <b>{fmt(bestModel.rmse, 3)}</b></span>
+                        <span>R² <b>{fmt(bestModel.r2, 3)}</b></span>
+                      </div>
+                    </>
+                  ) : null;
+                })()}
+
+                <div className="subhead">METRIC GUIDE</div>
+
+                <div className="scorecard-metrics compact">
+                  <div className="scorecard-metric">
+                    <b>MAE</b>
+                    <p>Average absolute prediction error.</p>
+                  </div>
+                  <div className="scorecard-metric">
+                    <b>RMSE</b>
+                    <p>Penalizes larger prediction errors.</p>
+                  </div>
+                  <div className="scorecard-metric">
+                    <b>R²</b>
+                    <p>Variance explained; can be negative.</p>
+                  </div>
+                </div>
+
+                <div className="subhead">EVALUATION METHODOLOGY</div>
+
+                <p className="scorecard-method-compact">
+                  Chronological holdout · No random shuffling ·
+                  Models compared using MAE, RMSE and R² ·
+                  Ensemble selected through validation performance.
+                </p>
+              </>
+
+
+
+
             ) : (
               <Empty message="Scores require a valid time series and holdout set." />
             )}
-
-            <div className="model-foot">
-              <Gauge size={15} />
-              <span>Lower MAE / RMSE is better. R² may be negative.</span>
-            </div>
           </Panel>
-        </div>
-      </section>
+
+
+          </div>
+        </section>
+
+
 
       {/* ANOMALY WATCHLIST + FEATURE IMPORTANCE */}
       <div className="lower-grid" id="anomalies">
@@ -2197,8 +2711,68 @@ export default function Dashboard({
               ))}
           </div>
 
+
+          {anomalyBreakdown ? (
+            <>
+              <div className="subhead">
+                DETECTOR AGREEMENT DISTRIBUTION
+              </div>
+
+              {[
+                {
+                  label: 'Single-detector flags',
+                  value:
+                    anomalyBreakdown.total_unique -
+                    anomalyBreakdown.combined,
+                  color: '#29b8ec',
+                },
+                {
+                  label: 'Multi-detector agreement',
+                  value: anomalyBreakdown.combined,
+                  color: '#f16b4f',
+                },
+              ].map((item) => {
+                const total = extras.anomaly_breakdown?.total_unique ?? 0;
+                const percentage = total
+                  ? (item.value / total) * 100
+                  : 0;
+
+                return (
+                  <div className="quality-row" key={item.label}>
+                    <span>{item.label}</span>
+                    <div className="quality-track">
+                      <i
+                        style={{
+                          width: `${percentage}%`,
+                          background: item.color,
+                        }}
+                      />
+                    </div>
+                    <b>{item.value.toLocaleString()}</b>
+                  </div>
+                );
+              })}
+
+              <div className="model-foot">
+                {anomalyBreakdown.combined.toLocaleString()} of{' '}
+                {anomalyBreakdown.total_unique.toLocaleString()}{' '}
+                flagged observations were identified by at least two
+                detectors. Detector agreement does not establish physical
+                severity.
+              </div>
+            </>
+          ) : null}
+
+
+
+
+
+
+
+
+
           <div className="model-foot">
-            {(extras.anomaly_breakdown?.total_unique ??
+            {(anomalyBreakdown?.total_unique ??
               d.kpis.anomaly_count).toLocaleString()} unique observations flagged.
             Detector counts overlap; these are statistical flags, not confirmed
             weather events or data errors.
@@ -2258,43 +2832,137 @@ export default function Dashboard({
           </div>
         </Panel>
 
-        <Panel title="Feature importance">
-          <div className="importance-list">
-            {d.forecasts.feature_importance.length ? (
-              d.forecasts.feature_importance
-                .slice(0, 8)
-                .map((feature, index) => (
-                  <div
-                    className="importance-row"
-                    key={feature.feature}
-                  >
-                    <span>{feature.feature}</span>
-                    <div className="quality-track">
-                      <i
-                        style={{
-                          width: `${Math.max(
-                            0,
-                            Math.min(100, feature.importance * 100),
-                          )}%`,
-                          background: palette[index % palette.length],
-                        }}
-                      />
-                    </div>
-                    <b>{fmt(feature.importance, 3)}</b>
-                  </div>
-                ))
-            ) : (
-              <Empty message="Feature importance requires a trained model." />
-            )}
-          </div>
 
-          <div className="model-foot">
-            <CircleHelp size={14} />
-            <span>Predictive contribution is not causation.</span>
-          </div>
-        </Panel>
+
+
+
+
+        <div className="lower-right-stack">
+          <Panel title="Feature importance">
+            <div className="importance-list">
+              {d.forecasts.feature_importance.length ? (
+                d.forecasts.feature_importance
+                  .slice(0, 8)
+                  .map((feature, index) => (
+                    <div
+                      className="importance-row"
+                      key={feature.feature}
+                    >
+                      <span>{feature.feature}</span>
+                      <div className="quality-track">
+                        <i
+                          style={{
+                            width: `${Math.max(
+                              0,
+                              Math.min(100, feature.importance * 100),
+                            )}%`,
+                            background: palette[index % palette.length],
+                          }}
+                        />
+                      </div>
+                      <b>{fmt(feature.importance, 3)}</b>
+                    </div>
+                  ))
+              ) : (
+                <Empty message="Feature importance requires a trained model." />
+              )}
+            </div>
+
+            <div className="model-foot">
+              <CircleHelp size={14} />
+              <span>Predictive contribution is not causation.</span>
+            </div>
+          </Panel>
+
+          {/* PM ACCELERATOR */}
+
+          <Panel title="PM Accelerator · Mission & alignment" className="pma-panel">
+            <div className="pma-content">
+              <div className="subhead">ABOUT THE ORGANIZATION</div>
+              <p className="pma-description">
+                PM Accelerator helps aspiring and current product managers
+                develop practical skills, build stronger portfolios, and
+                accelerate their careers toward product leadership.
+              </p>
+
+              <div className="subhead">PROJECT ALIGNMENT</div>
+              <p className="pma-description">
+                WeatherScope applies data science and predictive modelling
+                to a real-world problem: understanding global weather
+                patterns, identifying unusual observations, evaluating
+                forecast reliability, and exploring relationships between
+                weather and air quality.
+              </p>
+
+              <div className="subhead">WHAT THIS PROJECT DEMONSTRATES</div>
+
+              <div className="pma-grid">
+                <div className="pma-card">
+                  <span>DATA ENGINEERING</span>
+                  <b>Data quality</b>
+                  <p>
+                    Cleaning, validation, missing-value handling and
+                    outlier detection.
+                  </p>
+                </div>
+
+                <div className="pma-card">
+                  <span>PREDICTIVE ANALYTICS</span>
+                  <b>Forecasting</b>
+                  <p>
+                    Model evaluation, ensemble predictions and
+                    feature importance.
+                  </p>
+                </div>
+
+                <div className="pma-card">
+                  <span>EXPLORATORY ANALYSIS</span>
+                  <b>Pattern discovery</b>
+                  <p>
+                    Regional comparisons, seasonal patterns and
+                    weather relationships.
+                  </p>
+                </div>
+
+                <div className="pma-card">
+                  <span>PRODUCT THINKING</span>
+                  <b>Decision support</b>
+                  <p>
+                    Turning complex weather data into interpretable
+                    visual insights.
+                  </p>
+                </div>
+              </div>
+
+              <div className="subhead">ANALYTICAL WORKFLOW</div>
+
+              <div className="pma-workflow">
+                {[
+                  ['01', 'Data collection & preparation', 'INPUT'],
+                  ['02', 'Statistical analysis & anomaly detection', 'ANALYZE'],
+                  ['03', 'Predictive modelling & evaluation', 'PREDICT'],
+                  ['04', 'Interactive visualization & interpretation', 'DELIVER'],
+                ].map(([number, label, stage]) => (
+                  <div className="pma-step" key={number}>
+                    <span>{number}</span>
+                    <p>{label}</p>
+                    <b>{stage}</b>
+                  </div>
+                ))}
+              </div>
+
+              <div className="model-foot">
+                WeatherScope · Data-driven analysis · Predictive intelligence ·
+                Product-oriented presentation
+              </div>
+
+              <div className="model-foot">
+                Source: PM Accelerator official website · pmaccelerator.io
+              </div>
+            </div>
+          </Panel>
+        </div>
       </div>
     </main>
   );
-
 }

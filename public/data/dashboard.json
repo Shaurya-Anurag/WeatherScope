@@ -3978,6 +3978,26 @@
         2024,
         2025,
         2026
+      ],
+      "annual_observations": [
+        {
+          "year": 2024,
+          "observations": 44469,
+          "locations": 260,
+          "matched_location_months": 1627
+        },
+        {
+          "year": 2025,
+          "observations": 71100,
+          "locations": 210,
+          "matched_location_months": 2362
+        },
+        {
+          "year": 2026,
+          "observations": 55358,
+          "locations": 235,
+          "matched_location_months": 2045
+        }
       ]
     },
     "note": "Temperature anomalies are relative to each location\u2019s own calendar-month average over the available dataset. Year-over-year changes use only location-month pairs observed in both adjacent years. Precipitation is mean daily precipitation per location-month, not a monthly accumulated total. These short-record summaries are not climate normals or evidence of climate change."
