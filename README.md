@@ -1,6 +1,6 @@
 # WeatherScope — Global Weather Intelligence & Forecasting
 
-A local-first weather analytics project built for the PM Accelerator technical assessment. The interface is a custom dark, map-centered dashboard; data cleaning, statistical analysis, anomaly detection, and forecasting run locally in Python. **No weather API, hosted LLM, or paid API is used.**
+**WeatherScope is a data science and weather intelligence project developed for the PM Accelerator Weather Trend Forecasting technical assessment.** It combines data preprocessing, exploratory data analysis, statistical analysis, anomaly detection, and predictive modelling in a custom interactive dashboard. All analytical processing runs locally in Python. **No weather API, hosted LLM, or paid API is used.**
 
 > **Important:** This project does not assume that a `lastupdated` timestamp automatically provides a historical time series. The pipeline prioritizes `obs_date` for daily temporal analysis and retains `last_updated` as source metadata. Forecasting is enabled only when a location has enough distinct timestamped temperature observations. If the input CSV is a snapshot, the pipeline reports that limitation rather than inventing forecasts.
 
